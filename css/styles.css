@@ -4,31 +4,52 @@
   box-sizing: border-box;
 }
 
-/* utilities */
+
+body {
+  background:  #00adb5;
+  font-family: sans-serif;
+
+}
 
 
 
 
 .container {
-  width: 700px;
+  width: 1000px;
+  border-radius: 20px;
+  height: 100vh;
   margin: auto;
   text-align: center;
+  padding: 20px;
+  z-index: 1000;
 }
 
 
 .container .logo {
-  background: red;
+  background: #00adb5;
   padding: 20px;
 }
 
 
 .input-section {
   padding: 20px;
-  background: lightgrey;
+  background-color: #393e46;
+}
+
+.input-section i {
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.input-section input {
+  height: 40px;
+  margin: 0 5px;
+  padding: 0 5px;
 }
 
 .todos-list {
-  background: lightcoral;
+  background: #eeeeee;
   padding: 20px;
   
 }
@@ -40,4 +61,7 @@
 .todos-list ul li {
   display: flex;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid lightcoral;
 }

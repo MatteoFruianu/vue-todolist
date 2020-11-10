@@ -9,10 +9,11 @@ el: "#app",
 data: {
 
   // creo array nei data che rappresenta l'elenco di elementi della lista
-  todos: ["prova"],
+  todos: [],
 
    todo: '', //inizializzo item dell'array come stringa vuota
 
+  
    
   
 },
@@ -28,6 +29,12 @@ methods: {
 
     this.todos.splice(index)
   
+   },
+
+   defaultMessage() {
+     if (this.todos.length === 0) {
+       console.log("ciao");
+     }
    }
 
    
@@ -38,3 +45,4 @@ methods: {
 
 
 })
+

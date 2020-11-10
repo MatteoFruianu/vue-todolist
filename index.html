@@ -22,17 +22,20 @@
 
             <div class="input-section" @keyup.enter="addTodo"> <!-- aggiungo keyup enter in questo punto -->
                 <input type="text" placeholder="new item" v-model="todo">
-                <button @click="addTodo">Aggiungi</button>
+                <i @click="addTodo" class="fas fa-plus"></i>
+                
             </div>
 
             <div class="todos-list">
                
                 <ul>
 
+                    
+
                      <li v-for="(todo, index) in todos"> <!--ciclo sull'array todos -->
                         {{todo}}
 
-                        <button @click="deleteTodo(index)">cancella</button>
+                        <i @click="deleteTodo(index)" class="fas fa-trash-alt"></i>
                     </li>
 
                 </ul>
