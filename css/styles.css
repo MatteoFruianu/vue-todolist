@@ -33,7 +33,11 @@
   
 }
 
-.todo-item {
+.todos-list ul {
+  list-style: none;
+}
+
+.todos-list ul li {
   display: flex;
   justify-content: space-between;
 }

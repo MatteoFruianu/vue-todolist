@@ -20,7 +20,7 @@
                 <h1>TODO List</h1>
             </div>
 
-            <div class="input-section">
+            <div class="input-section" @keyup.enter="addTodo"> <!-- aggiungo keyup enter in questo punto -->
                 <input type="text" placeholder="new item" v-model="todo">
                 <button @click="addTodo">Aggiungi</button>
             </div>
@@ -29,10 +29,10 @@
                
                 <ul>
 
-                     <li v-for="todo in todos"> <!--ciclo sull'array todos -->
-
+                     <li v-for="(todo, index) in todos"> <!--ciclo sull'array todos -->
                         {{todo}}
 
+                        <button @click="deleteTodo(index)">cancella</button>
                     </li>
 
                 </ul>
