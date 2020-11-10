@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utilities */
+
+
+
+
+.container {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+
+.container .logo {
+  background: red;
+  padding: 20px;
+}
+
+
+.input-section {
+  padding: 20px;
+  background: lightgrey;
+}
+
+.todos-list {
+  background: lightcoral;
+  padding: 20px;
+  
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+}

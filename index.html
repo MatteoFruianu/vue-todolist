@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue-slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+
+    
+
+    <div id="app">
+
+        <div class="container">
+
+            <div class="logo">
+                <h1>TODO List</h1>
+            </div>
+
+            <div class="input-section">
+                <input type="text" placeholder="new item" v-model="todo">
+                <button @click="addTodo">Aggiungi</button>
+            </div>
+
+            <div class="todos-list">
+               
+                <ul>
+
+                     <li v-for="todo in todos"> <!--ciclo sull'array todos -->
+
+                        {{todo}}
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        
+
+    </div>
+    
+
+    <script src="./javascript/main.js"></script>
+</body>
+</html>
