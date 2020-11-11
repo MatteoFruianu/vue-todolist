@@ -7,21 +7,19 @@
 
 body {
   background:  #00adb5;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
-
-
-
 .container {
   width: 1000px;
-  border-radius: 20px;
   height: 100vh;
+  margin-top: 20px;;
   margin: auto;
   text-align: center;
   padding: 20px;
   z-index: 1000;
+  margin-top: 20px;
 }
 
 
@@ -32,25 +30,43 @@ body {
 
 
 .input-section {
+  position: relative;
   padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
   background-color: #393e46;
+ 
+}
+
+.input-section .dumpster {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
 }
 
 .input-section i {
+  
   color: white;
   font-size: 20px;
   padding-left: 10px;
+  cursor: pointer;
 }
+
+
 
 .input-section input {
   height: 40px;
   margin: 0 5px;
   padding: 0 5px;
+  border-radius: 10px;
+  width: 300px
 }
 
 .todos-list {
   background: #eeeeee;
   padding: 20px;
+  border-radius: 20px;
   
 }
 
@@ -61,7 +77,18 @@ body {
 .todos-list ul li {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px;
   border-bottom: 1px solid lightcoral;
+  background: lightgrey;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.default-msg {
+  border-radius: 10px;
+
+}
+
+.todos-list ul li i {
+  cursor: pointer;
 }

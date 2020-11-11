@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vue-slider</title>
+    <title>vue-todo-list</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -17,18 +18,22 @@
         <div class="container">
 
             <div class="logo">
-                <h1>TODO List</h1>
+                <h1>TODO LIST</h1>
             </div>
 
-            <div class="input-section" @keyup.enter="addTodo"> <!-- aggiungo keyup enter in questo punto -->
+            <div class="input-section" 
+            @keyup.enter="addTodo"> <!-- aggiungo keyup enter in questo punto -->
                 <input type="text" placeholder="new item" v-model="todo">
                 <i @click="addTodo" class="fas fa-plus"></i>
+
+                <i v-if="todos.length > 1"  @click="deleteAll" class="fas fa-dumpster dumpster"  ></i>
+
                 
             </div>
 
             <div class="todos-list">
 
-                <div v-if="todos.length === 0"> 
+                <div v-if="todos.length === 0" class="default-msg"> 
                     Non ci sono elementi nella lista
                 </div>
                
