@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.red {
+  background: red;
+}
+
 
 body {
   background:  #00adb5;
@@ -49,7 +53,6 @@ body {
   
   color: white;
   font-size: 20px;
-  padding-left: 10px;
   cursor: pointer;
 }
 
@@ -92,3 +95,30 @@ body {
 .todos-list ul li i {
   cursor: pointer;
 }
+
+i {
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color .4s;
+}
+
+i:hover {
+  background: lightcoral;
+}
+
+
+@media screen and (max-width: 600px) {
+
+
+  .container {
+    width: 500px;
+  }
+
+  .input-section input {
+    width: 150px
+  }
+
+
+}
+
+

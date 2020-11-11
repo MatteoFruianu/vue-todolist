@@ -12,9 +12,6 @@ const app = new Vue ({
   
      todo: '', //inizializzo item dell'array come stringa vuota
   
-    
-     
-    
   },
   
   methods: {
@@ -38,14 +35,7 @@ const app = new Vue ({
      }
   
     
-
-    
-  
-     
-  
   },
-  
-   
   
   
   })
